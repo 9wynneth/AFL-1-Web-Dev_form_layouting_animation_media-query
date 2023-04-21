@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Soal AFL-1 Nomor 4</title>
+<style>
+    body {
+        font-family: Calibri;
+        font-size: 16pt;
+        width: 400px;
+    }
+    #header {
+        text-align: center;
+        color: navy;
+        text-decoration: underline;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    label {
+        color: navy;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+     
+    }
+
+    input {
+        font-family: Calibri;
+        margin-bottom: 10px;
+        border: white solid 2px;
+        text-shadow: 1px;
+        background-color: cornsilk;
+        box-shadow: 1px 1px 1px 1px #999;
+        margin-top: 3px;
+       
+    }
+
+    input::placeholder {
+        opacity: 0.2;
+    }
+    
+    input[type=radio], input[type=checkbox]{
+        box-shadow: none;
+    }
+
+    th {
+        text-align: right;
+        vertical-align: top;
+    }
+    td {
+        text-align: left;
+        align-items: top;
+        color: gray;
+    }
+
+    option {
+        color: navy;
+    }
+</style>
+</head>
+<body>
+<div class="body">
+    <div id=header> 
+        <strong>Registration Form </strong>
+    </div>
+    <form action="handler.php" method="POST">
+        <table>
+        <tr>
+            <th><label id="namaLengkap"> Nama Lengkap: </label> </th>
+            <td><input type="text" name="fullName" size="30" placeholder="John Doe" required></td>
+        </tr>
+        <tr>
+            <th><label id="pass"> Password: </label>  </th>
+            <td> <input type="password"
+                name="pass"
+                size="30"
+                placeholder="Your password" required></td>
+        </tr>
+        <tr>
+            <th><label id="pass"> Confirm Password: </label> </th>
+            <td><input type="password"
+                name="passC"
+                size="30"
+                placeholder="Confirm Your Password" required> 
+            </td>
+        </tr>
+        <tr>
+            <th><label> Sex: </label></th>
+            <td>
+                <input type="radio"
+                name="radioSexM"
+                value="rSex" 
+                checked> <label> Male </label>
+                <input type="radio"
+                name="radioSexF"
+                value="rSex" 
+                > <label> Female </label> 
+            </td>
+        </tr>
+        <tr>
+            <th><label>E-mail: </label></th>
+            <td><input type="email" id="email" name="emailCapy" placeholder="johndoe@gmail.com">
+            </td>
+        </tr>
+        <tr>
+            <th> <label>Age: </label> </th>
+            <td><input type="number"  name="umur" min="0" max="100" placeholder="Your age">
+            </td>
+        </tr>
+        <tr>
+            <th><label>Pendidikan: </label> </th>
+            <td> <select class="dropdown" name="pendidikan" style="background-color: white; box-shadow: none;">
+                <option style="color: navy;">D3 </option>
+                <option>S1 </option>
+                <option>S2 </option>
+                <option>S3 </option>
+            </select> 
+            </td>
+        </tr>
+        <tr>
+            <th> <label>Hobby: </label></th>
+            <td>
+                <input class="checkboxpertama" type="checkbox" name="firstHobby" style="box-shadow: 0px transparent;" > 
+                <label style="font-size: 10px; "> Makan </label> <br>
+                <input class="checkboxkedua" type="checkbox" name="secondHobby" style="font-size: 10px;"> 
+                <label style="font-size: 10px; "> Nonton </label> <br>
+                <input class="checkboxketiga" type="checkbox" name="thirdHobby" style="font-size: 10px;">  
+                <label style="font-size: 10px; "> Tidur </label> <br>  
+                <input type="submit" value="Register" name="register" style="color: navy;">
+            </td>
+        </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

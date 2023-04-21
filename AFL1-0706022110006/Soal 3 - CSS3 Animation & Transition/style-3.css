@@ -1,0 +1,90 @@
+@font-face {
+    font-family:stroke;
+    src:url('Stroke-Regular.otf');
+}
+
+body{
+	background-color: transparent;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    background-size: auto, cover;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+}
+
+.menu {
+    font-family: stroke;
+    font-size: 20px;
+    padding: 15px;
+    width: 255px;
+    margin: 15px;
+    border: 2px solid black;
+    text-shadow: 0px 0px 8px black;
+    background-color:#b89d65;
+    font-weight: bold;
+    color: transparent;
+    background-image: url(pattern.png) ;
+
+    animation: button 3s;
+    transform-origin: 50%;
+    transition: 1s ease-in-out;
+}
+
+#header {
+    padding-bottom: 20px;
+}
+
+.menu:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: #a0612d;
+    background-image: url(pattern.png) ;
+    transform: translateX(10px);
+    transition: 1s ease-in-out;
+    text-shadow: 2px 2px 15px black;
+}
+
+@keyframes button {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+      color: white;
+  }
+  50% {
+      opacity: 0;
+      transform: scale(3);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+#menu1
+{
+    animation-delay: 0.5s;
+}
+#menu2
+{
+    animation-delay: 1s;
+}
+#menu3
+{
+    animation-delay: 1.5s;
+}
+#menu4
+{
+    animation-delay: 2s;
+}
+#menu5
+{
+    animation-delay: 2.5s;
+}
+#menu6
+{
+    animation-delay: 3s;
+}
